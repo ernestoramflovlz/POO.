@@ -1,5 +1,5 @@
 # POO.
-Repositorio de Poo
+Curso del Tec Poo
 # Tareas
 
 #Practicas
