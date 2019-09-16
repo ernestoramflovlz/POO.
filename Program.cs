@@ -1,7 +1,6 @@
 ﻿using System;
-System.Collections.Generic 
 
-namespace ListaPelicula
+namespace Pelicula
 {
     class pelicula 
     {
@@ -34,26 +33,20 @@ namespace ListaPelicula
     }
     class Program
     {
-
         static void Main()
         {
-            List<Persona> personas = new List<Persona>();
+            
+           Pelicula p1 = new Pelicula();
+           p1.SetTitulo("Titanic");
+           p1.SetAño(1997); 
+           Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+           p1.imprime();
 
-             persona.Add(new Persona ("pam"));
-             persona.Add(new Persona ("tom"));
-             persona.Add(new Persona ("jim"));
-
-             persona.ForEach(print);
-
-             persona.ForEach(delegate(string persona)
-             {
-                 console.WriteLine(persona);
-             });
-              private static void Print(string p)
-             {
-                Console.WriteLine(p);
-             }
-       
+           Pelicula p2 = new Pelicula();
+           p2.SetTitulo("Avatar");
+           p2.SetAño(2009); 
+           Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
+           p2.imprime();
         }
     }
 }
