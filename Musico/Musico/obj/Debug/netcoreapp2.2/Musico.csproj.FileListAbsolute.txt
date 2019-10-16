@@ -1,0 +1,4 @@
+C:\Users\hp\Documents\4toNivelSemestre\POO\Musico\Musico\obj\Debug\netcoreapp2.2\Musico.csprojAssemblyReference.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Musico\Musico\obj\Debug\netcoreapp2.2\Musico.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Musico\Musico\obj\Debug\netcoreapp2.2\Musico.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Musico\Musico\obj\Debug\netcoreapp2.2\Musico.AssemblyInfo.cs
