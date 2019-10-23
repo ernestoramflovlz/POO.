@@ -1,5 +1,8 @@
 # OOP-2019.
 Curso del Tec Poo
+Flores Velez Ernesto Ramses
+18210476
+
 # Tareas
 
 
@@ -13,8 +16,7 @@ https://github.com/ernestoramflovlz/POO./tree/master/Juego - Juego de la Vida
 
 https://github.com/ernestoramflovlz/POO./tree/master/Musico/Musico - Musico
 
-
-#Practicas
+# Practicas
 
 https://github.com/ernestoramflovlz/POO./tree/master/Padre/Padre - Padre
 
