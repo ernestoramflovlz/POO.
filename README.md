@@ -6,6 +6,8 @@ Flores Velez Ernesto Ramses
 # Tareas
 https://github.com/ernestoramflovlz/POO./tree/master/figura/figura - Figura
 
+https://github.com/ernestoramflovlz/POO./tree/master/Figura/Figura - Figura
+
 https://github.com/ernestoramflovlz/POO./tree/master/Faceclon/Publicacion - Publicacion
 
 https://github.com/ernestoramflovlz/POO./tree/master/TareaParametros/Parametros - Parametros
