@@ -1,0 +1,11 @@
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\bin\Debug\netcoreapp2.2\figura.deps.json
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\bin\Debug\netcoreapp2.2\figura.runtimeconfig.json
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\bin\Debug\netcoreapp2.2\figura.runtimeconfig.dev.json
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\bin\Debug\netcoreapp2.2\figura.dll
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\bin\Debug\netcoreapp2.2\figura.pdb
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.csprojAssemblyReference.cache
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.AssemblyInfo.cs
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.dll
+C:\Users\hp\Documents\4toNivelSemestre\Unidad I POO\figura\figura\obj\Debug\netcoreapp2.2\figura.pdb
