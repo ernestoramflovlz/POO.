@@ -1,0 +1,4 @@
+C:\Users\hp\Documents\4toNivelSemestre\POO\Espias\Espias\obj\Debug\netcoreapp2.2\Espias.csprojAssemblyReference.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Espias\Espias\obj\Debug\netcoreapp2.2\Espias.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Espias\Espias\obj\Debug\netcoreapp2.2\Espias.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Espias\Espias\obj\Debug\netcoreapp2.2\Espias.AssemblyInfo.cs
