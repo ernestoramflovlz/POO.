@@ -4,6 +4,8 @@ Flores Velez Ernesto Ramses
 18210476
 
 # Tareas
+https://github.com/ernestoramflovlz/POO./tree/master/Herencia%20Alumno'/Alumno - Alumno Herencia
+
 https://github.com/ernestoramflovlz/POO./tree/master/figura/figura - Figura
 
 https://github.com/ernestoramflovlz/POO./tree/master/Figura/Figura - Figura
