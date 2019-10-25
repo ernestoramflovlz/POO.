@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Publicacion
@@ -6,17 +6,19 @@ namespace Publicacion
     abstract class Publicación
     {
         protected string nombre, correo;
-        protected DateTime fecha_uso, hora_uso;
+       
+        protected string fecha_uso;
 
-        public Publicación(string nom, string co, DateTime fecha_uso, DateTime hora_uso)
+        public Publicación(string nom, string co, string fecha)
         {
             this.nombre = nom;
             this.correo = co;
-            this.fecha_uso = fecha_uso;
-            this.hora_uso = hora_uso;
+            this.fecha_uso = fecha;
+            
+            
         }
-        abstract public void Ver();
-        public void printdatos()
+        abstract public void observa();
+        public void printinformacion()
         {
           Console.WriteLine(nombre, correo);
         }
@@ -24,11 +26,11 @@ namespace Publicacion
 
      class Estado : Publicación
     {
-      public Estado(string nom, string co, DateTime fecha_uso, DateTime hora_uso):base(nom,co,fecha_uso,hora_uso)
+      public Estado(string nom, string co, string fecha):base(nom,co,fecha)
       {
 
       }
-       public new void printdatos()
+       public override void observa()
       {
        Console.WriteLine("Ver el estado de perfil del usuario {0}",nombre, correo);
       }
@@ -36,24 +38,24 @@ namespace Publicacion
     }
     class Foto : Publicación
     {
-     public Foto(string nom, string co, DateTime fecha_uso, DateTime hora_uso):base(nom,co,fecha_uso,hora_uso)
+     public Foto(string nom, string co, string fecha):base(nom,co,fecha)
      {
 
      }
-     public new void printdatos()
+     public override void observa()
      {
-         Console.WriteLine("Ver foto de perfil {0}",nombre);
+         Console.WriteLine("Ver foto de perfil {0}",nombre,fecha_uso);
      }
     }
     class Link : Publicación
     {
-     public Link(string nom, string co, DateTime fecha_uso, DateTime hora_uso):base(nom,co,fecha_uso,hora_uso)
+     public Link(string nom, string co, string fecha):base(nom,co,fecha)
      {
 
      }
-     public new void printdatos()
+     public override void observa()
      {
-         Console.WriteLine("Ver el link de perfil {0}",nombre,correo);
+         Console.WriteLine("Ver el link de perfil {0}",correo);
      }
     }
     class Program
@@ -61,23 +63,25 @@ namespace Publicacion
         static void Main(string[] args)
         {
             List<Publicación> publicaciones = new List<Publicación>();
-            publicaciones.Add(new Estado("Saul","saul.romero@hotmail.com",20/05/19));
-            publicaciones.Add(new Foto("Juan","juan.guerro@hotmail.com",11/02/19));
-            publicaciones.Add(new Link("Diana","diana.vizcarra@hotmail.com",30/08/19));
-            publicaciones.Add(new Estado("Luis","luis.perez@hotmail.com",14/12/19));
-            publicaciones.Add(new Foto("Maria","maria.leyva@hotmail.com",05/06/19));
-            publicaciones.Add(new Link("Fabio","Fabio.torres@hotmail.com",13/01/19));
+            
+            publicaciones.Add(new Estado("Saul","saul.romero@hotmail.com","6 de marzo del 2019"));
+            publicaciones.Add(new Foto("Juan","juan.guerro@hotmail.com","17 de enero del 2019"));
+            publicaciones.Add(new Link("Diana","diana.vizcarra@hotmail.com","14 de diciembre del 2019"));
+            publicaciones.Add(new Estado("Luis","luis.perez@hotmail.com","28 de mayo del 2019"));
+            publicaciones.Add(new Foto("Maria","maria.leyva@hotmail.com","8 de marzo del 2019"));
+            publicaciones.Add(new Link("Fabio","Fabio.torres@hotmail.com","21 de julio del 2019"));
             
             foreach(var item in publicaciones)
             {
-                item.Ver();
+                item.observa();
             }
-            Estado estado = new Estado("Saul","saul.romero@hotmail.com");
-            estado.Ver();
-            Foto foto = new Foto("Saul");
-            foto.Ver();
-            Link link = new Link("Saul","saul.romero@hotmail.com");
-            link.Ver();
+            Estado estado = new Estado("Saul","saul.romero@hotmail.com","6 de marzo del 2019");
+            estado.observa();
+            Foto foto = new Foto("Ernesto","ernesto.valles@hotmail.com","5 de febrero del 2018");
+            foto.observa();
+            Link link = new Link("Pedro","pedro.ramirez@hotmail.com","26 de noviembre del 2017");
+            link.observa();
         }
     }
 }
+
