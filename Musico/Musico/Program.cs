@@ -51,6 +51,18 @@ namespace Musico
            Console.WriteLine("{0} esta tocando su guitarra {1}",nombre,guitarra);
        }
     }
+    
+    class Bateria : Musico;
+    {
+        private string bateria;
+        public Bateria(string no, string bateria):base(no)
+        {
+            this.bateria = bateria;
+        }
+        public override void Toca()
+       {
+           Console.WriteLine("{0} esta tocando su bateria {1}",nombre,bateria);
+       }
     class Program
     { 
 
@@ -60,6 +72,7 @@ namespace Musico
             Bajista flea = new Bajista("Flea","Gibson");
             Console.WriteLine(tom.Saludo());
             Guitarrista ram = new Guitarrista("Ram");
+            Bateria robert = new Bateria("Robert");
             
             tom.Saludo();
             flea.Saludo();
@@ -69,11 +82,15 @@ namespace Musico
 
             ram.Guitarra();
             ram.Toca();
+            
+            robert.Bateria();
+            robert.Toca();
 
           List<Musico> grupo = new List <Musico>();
           grupo.Add(tom);
           grupo.Add(flea);
           grupo.Add(ram);
+          grupo.Add(robert);
           foreach(Musico m in grupo)
           {
               m.Saludo();
