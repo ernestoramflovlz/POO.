@@ -1,0 +1,11 @@
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\bin\Debug\netcoreapp2.2\Stack.deps.json
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\bin\Debug\netcoreapp2.2\Stack.runtimeconfig.json
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\bin\Debug\netcoreapp2.2\Stack.runtimeconfig.dev.json
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\bin\Debug\netcoreapp2.2\Stack.dll
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\bin\Debug\netcoreapp2.2\Stack.pdb
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.csprojAssemblyReference.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.AssemblyInfo.cs
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.dll
+C:\Users\hp\Documents\4toNivelSemestre\POO\Unidad IV - VI POO\Object\Stack\obj\Debug\netcoreapp2.2\Stack.pdb
