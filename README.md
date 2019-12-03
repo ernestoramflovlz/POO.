@@ -35,4 +35,3 @@ https://github.com/ernestoramflovlz/POO./tree/master/Herencia_Persona - Herencia
 https://github.com/ernestoramflovlz/POO./tree/master/Espias/Espias - Espias
 
 # Proyecto Final
-https://github.com/ernestoramflovlz/POO./blob/master/Proyecto_Final.csproj - Proyecto Producto
