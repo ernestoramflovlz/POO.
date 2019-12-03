@@ -1,52 +1,45 @@
 ﻿using System;
-
-namespace Pelicula
+using System.IO;
+using System.Collections.Generic;
+//6 de dicembre entrega
+//puede ser separado
+//presentar en la maquina
+namespace Proyecto_Final
 {
-    class pelicula 
-    {
-      private string titulo;
-      private int16 año;
-      private string pais;
-      private string director;
+ //Se abre la clase Producto
+   class Producto
+{
+    //Se Describen las variables de los objetos
 
-      public pelicula (string titulo) {this.titulo=ti;}
-      public void SetTitulo(string t){titulo = t;}
-      public string GetTitulo(){return titulo;}
+    string Codigo {get; set;}
+    string Descripcion {get; set;}
+    decimal Precio {get; set;}
+    int Departamento {get; set;}
+    int Likes {get; set;}
 
-      public pelicula (int16 año) {this.año=an;}
-      public void SetAño(string a){año = a;}
-      public string GetAño(){return año;}
+//Se crea el constructor
+public Producto(string CO, string Des, decimal Pr, int Depto, int L)
+{
+    //Se describe las variables del constructor
+ Codigo = CO;
+ Descripcion = Des;
+ Precio = Pr;
+ Departamento = Depto;
+ Likes = L;
 
-      public pelicula (string pais) {this.pais=pa;}
-      public void SetTitulo(string p){titulo = p;}
-      public string GetTitulo(){return pais;}
+ public Producto()
+{}
 
-      public pelicula (string director) {this.director=di;}
-      public void SetTitulo(string d){titulo = d;}
-      public string GetTitulo(){return director;}
-      public void imprime()
+}
 
-    {
-        Console.WriteLine("Informacion de la pelicula es: {0}", titulo, año, pais, director);
-    }
-     public pelicula(){titulo = "n/a",año = "n/a", pais = "n/a",director = "n/a";}
-    }
+
+}
+
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            
-           Pelicula p1 = new Pelicula();
-           p1.SetTitulo("Titanic");
-           p1.SetAño(1997); 
-           Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-           p1.imprime();
-
-           Pelicula p2 = new Pelicula();
-           p2.SetTitulo("Avatar");
-           p2.SetAño(2009); 
-           Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
-           p2.imprime();
+            Console.WriteLine("Hello World!");
         }
     }
 }
