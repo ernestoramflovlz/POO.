@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+//Libreria
+
 
 //6 de dicembre entrega
 //puede ser separado
@@ -13,6 +15,7 @@ namespace Proyecto_Final
 {
     //Se Describen las variables de los objetos en publico
  
+ //conocer la cadena publica de una variable de la clase
   public   string codigo {get; set;}
   public   string descripcion {get; set;}
   public   decimal precio {get; set;}
@@ -22,7 +25,8 @@ namespace Proyecto_Final
 //Se crea el constructor
 public Producto_Electronico(string CO, string Des, decimal Pr, int Depto, int L)
 {
-    //Se describe las variables del constructor
+    //Se describe las variables del constructor 
+    //Se utiliza para iniciar objetos de una clase 
  codigo = CO;
  descripcion = Des;
  precio = Pr;
@@ -32,18 +36,22 @@ public Producto_Electronico(string CO, string Des, decimal Pr, int Depto, int L)
 
 public Producto_Electronico()
 {}
-
+//constructor
+//Se utiliza para iniciar objetos de una clase
 }
 class ProductoElectronicoArchivo
+//Clase de productoArchivo
 {
     public static void EscribeProductosElectronicosBIN(string archivo, List <Producto_Electronico> productos_electronicos)
     {//En este medoto va guardar el archivo con respectivas variables y parametros
     //Se instancia la lista de los productos
     //Se usa el texto binario para guardar y abrir archivo 
-        FileStream Fs = new FileStream(archivo , FileMode.OpenOrCreate, FileAccess.Write);
+        FileStream Fs = new FileStream(archivo , FileMode.OpenOrCreate, FileAccess.Write); 
         BinaryWriter binOut = new BinaryWriter(Fs);
+        //BinaryWriter simplica la estructura de tipos datos de las que implementa la interfaz del escrito
         foreach(Producto_Electronico pe in productos_electronicos)
         {
+            //foreach regresa los valores de la lista
          binOut.Write(pe.codigo);
          binOut.Write(pe.descripcion);
          binOut.Write(pe.precio);
@@ -57,12 +65,15 @@ class ProductoElectronicoArchivo
     public static void EscribeProductosElectronicosTXT(string archivo, List<Producto_Electronico> productos_electronicos)
     { //Describe el producto en texto y guarda el archivo
     //Va describiendo la lista de productos
+    //FileStream proporciona para leer, escribir, abrir y cerrar archivos en un archivo sistema operativo
       FileStream Fs = new FileStream(archivo , FileMode.OpenOrCreate, FileAccess.Write);
          StreamWriter txtOut = new StreamWriter(Fs);
-         //Va quedar fuera el archivo a la hora de imprimir
+         //Repite la lista de los objetos
+         //StreamWriter proporcionara para escribir las cadenas de archivo de espacio
      foreach(Producto_Electronico pe in productos_electronicos)
      {
-         txtOut.WriteLine("{0}|{1}|{2}", pe.codigo,pe.descripcion,pe.precio,pe.likes);
+         //Crea una lista de archivo
+         txtOut.WriteLine("{0}|{1}|{2}", pe.codigo,pe.descripcion,pe.precio,pe.likes); //Imprime el txtOut con sus variables respectiva lista
      }
      txtOut.Close();
     }
@@ -75,8 +86,10 @@ class ProductoElectronicoArchivo
      //Abre el ciclo para leer los productos retornandolo 
 
      using(BinaryReader binIn = new BinaryReader(Fs))
+     //BinaryReader simplifica la lectura en tipos de datos primitivos de una secuencia
      {
          while (binIn.PeekChar() != -1)
+         //while hace la declaracion del flujo de control para formar una condicion booleana de codigo
          {
              Producto_Electronico productos_electronico = new Producto_Electronico();
              productos_electronico.codigo = binIn.ReadString();
@@ -95,6 +108,7 @@ class ProductoElectronicoArchivo
     {
         List<Producto_Electronico> productos_electronicos = new List<Producto_Electronico>();
         using (StreamReader Mr = new StreamReader(archivo))
+        //StreamReader lee el caracter del flujo de entrada
         { //Va haciendo otro ciclo que va leer las columnas de la lista 
             string line = "";
             while ((line = Mr.ReadLine()) != null)
@@ -107,6 +121,39 @@ class ProductoElectronicoArchivo
         }
         return productos_electronicos;
     }
+    public static void GetDepartment()
+    { //Metodo de menu para eligir la opcion del caso que quiera seleccionar
+    //el break para saltar de diferentes casos
+    string eleccion_producto = Console.ReadLine();
+    int depo=Convert.ToInt32(eleccion_producto);
+    
+     switch (depo)
+     {
+      case 1:
+       Console.WriteLine("1|producto electronico radio #1 Negro|20.50|Departamento 1|40");
+      break;
+
+      case 2:
+       Console.WriteLine("2|producto electronico television #2 |50.75|Departamento 2|50");      
+      break;
+
+      case 3:
+       Console.WriteLine("3|producto electronico cables #3 |40.45|Departamento 3|60");
+      break;
+
+      case 4:
+       Console.WriteLine("4producto electronico celulares #4 |25.10|Departamento 4|70");
+      break;
+
+      case 5:
+       Console.WriteLine("Salida");
+      break;
+
+      default:
+      Console.WriteLine("Fin de lista");
+      break;
+      
+     }
     
 }
 //Esto fue lo que la clase de producto
@@ -128,13 +175,17 @@ class ProductoElectronicoArchivo
            //Se guarda el archivo binario
            ProductoElectronicoArchivo.EscribeProductosElectronicosBIN(@"productos_electronicos.bin", products_electronics);
             Console.WriteLine("Archivo Grabado");
-            Console.ReadKey();
+            Console.ReadKey();  //detiene la captura de la pantalla
+        
             List<Producto_Electronico> productos_electronicos_leidos = ProductoElectronicoArchivo.LeeProductosElectronicosBIN("producto_electronico.bin");
            //Imprime la lista de los productos
             foreach(Producto_Electronico pe in productos_electronicos_leidos)
             {
+                //Imprime las variables
             Console.WriteLine("{0} {1} {2}", pe.codigo, pe.descripcion,pe.departamento,pe.precio,pe.likes);
             }
         }
     }
 }
+}
+
